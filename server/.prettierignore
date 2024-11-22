@@ -1,0 +1,18 @@
+# Ignore dependencies and build directories
+node_modules/
+dist/
+build/
+
+# Lock files
+pnpm-lock.yaml
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Git-related files
+.git/
+.gitignore
