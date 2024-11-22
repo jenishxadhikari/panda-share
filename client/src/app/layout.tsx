@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Recursive } from 'next/font/google'
 
+import { Toaster } from '@/components/ui/sonner'
+
 import './globals.css'
 
 const recursive = Recursive({ subsets: ['latin'] })
@@ -17,7 +19,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${recursive.className} antialiased`}>{children}</body>
+      <body className={`${recursive.className} antialiased`}>
+        {children}
+        <Toaster
+          toastOptions={{
+            classNames: {
+              toast: 'bg-background',
+              error: 'text-red-400',
+              success: 'text-green-400',
+            },
+          }}
+        />
+      </body>
     </html>
   )
 }
