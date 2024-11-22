@@ -1,0 +1,25 @@
+# Ignore dependencies and build directories
+node_modules/
+.next/
+dist/
+build/
+.contentlayer/
+
+# Lock files
+pnpm-lock.yaml
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.next-env.d.ts
+
+# Configurations and ignored files
+postcss.config.mjs
+next.config.ts
+
+# Git-related files
+.git/
+.gitignore
