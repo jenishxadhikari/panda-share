@@ -1,3 +1,2 @@
 cd client
-pnpm prepare
 pnpx lint-staged
